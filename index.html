@@ -19,8 +19,8 @@
         <input id="togglestate" type="checkbox" aria-hidden="true" tabindex="-1">
         <div>    <h2>Available Modules</h2>
     <ul>
-            <li><a href="DisplayChoices.html">DisplayChoices</a></li>
-            <li><a href="GenerateRaces.html">GenerateRaces</a></li>
+            <li><a href="html/DisplayChoices.html">DisplayChoices</a></li>
+            <li><a href="html/GenerateRaces.html">GenerateRaces</a></li>
     </ul>
 </div>
     </nav>
@@ -84,7 +84,7 @@
                 script.async = true;
                 script.onload = () => resolve(window.pdocSearch);
                 script.onerror = (e) => reject(e);
-                script.src = "search.js";
+                script.src = "html/search.js";
                 document.getElementsByTagName("head")[0].appendChild(script);
             });
         } catch (e) {
